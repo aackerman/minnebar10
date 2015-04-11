@@ -12,15 +12,18 @@ let App = React.createClass({
     return { img: PLACEKITTEN }
   },
 
-  lookupUser(e) {
-    console.log('lookupUser');
-    e.preventDefault();
-    let username = this.refs.username.getDOMNode().value;
+  lookupUser(username) {
     rest.find('users', username).then((res) => {
       this.setState({ img: res.avatar_url });
     }, (err) => {
       this.setState({ img: PLACEKITTEN });
     });
+  },
+
+  handleSubmit(e) {
+    e.preventDefault();
+    let username = this.refs.username.getDOMNode().value;
+    this.lookupUser(username);
   },
 
   render() {
@@ -41,7 +44,7 @@ let App = React.createClass({
     return (
       <div style={styles.container}>
         <h1>Hello Minnebar!</h1>
-        <form ref="submitForm" onSubmit={this.lookupUser}>
+        <form ref="submitForm" onSubmit={this.handleSubmit}>
           <label>
             <span>Github Username </span>
             <input ref="username"/>
