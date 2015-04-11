@@ -1,5 +1,8 @@
 {
   "main": "index.js",
+  "scripts": {
+    "this": "grunt"
+  },
   "devDependencies": {
     "babel": "^5.0.12",
     "grunt": "^0.4.5",
