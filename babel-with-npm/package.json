@@ -1,7 +1,8 @@
 {
   "main": "add.js",
   "scripts": {
-    "js": "babel add.js -o bundle.js"
+    "this": "npm run js",
+    "js": "babel add.js -o bundle.js && echo 'created bundle.js'"
   },
   "devDependencies": {
     "babel": "^5.0.12"

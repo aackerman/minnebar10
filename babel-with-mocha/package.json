@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "this": "npm test",
     "test": "mocha --compilers js:babel/register"
   },
   "author": "",
