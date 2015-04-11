@@ -1,1 +1,0 @@
-{"version":3,"sources":["app.js"],"names":[],"mappings":";;AAAA,IAAI,GAAG,GAAG;;AAER,MAAI,EAAA,gBAAG;AACL,WAAO,CAAC,GAAG,CAAC,qBAAqB,CAAC,CAAC;GACpC;CACF,CAAC;;AAEF,GAAG,CAAC,IAAI,EAAE,CAAC","file":"app.js","sourcesContent":["let App = {\n  // enhanced object literal syntax\n  init() {\n    console.log('App was initialized');\n  }\n};\n\nApp.init();\n"]}

@@ -13,6 +13,7 @@ let App = React.createClass({
   },
 
   lookupUser(e) {
+    console.log('lookupUser');
     e.preventDefault();
     let username = this.refs.username.getDOMNode().value;
     rest.find('users', username).then((res) => {
@@ -40,12 +41,12 @@ let App = React.createClass({
     return (
       <div style={styles.container}>
         <h1>Hello Minnebar!</h1>
-        <form onSubmit={this.lookupUser}>
+        <form ref="submitForm" onSubmit={this.lookupUser}>
           <label>
             <span>Github Username </span>
             <input ref="username"/>
           </label>
-          <button type="submit">Find</button>
+          <button ref="submit" type="submit">Find</button>
         </form>
         <div style={styles.imgContainer}>
           <img src={this.state.img} style={styles.img}/>
