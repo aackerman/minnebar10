@@ -1,0 +1,9 @@
+{
+  "main": "add.js",
+  "scripts": {
+    "js": "babel add.js -o bundle.js"
+  },
+  "devDependencies": {
+    "babel": "^5.0.12"
+  }
+}
