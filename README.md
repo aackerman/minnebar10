@@ -2,4 +2,9 @@
 
 Examples of using Babel with different front-end technologies.
 
-Each sub-folder contains it's own `README.md` with instructions for running examples
+Each example should be able to be run with the following
+
+```
+$ npm install
+$ npm run this
+```
