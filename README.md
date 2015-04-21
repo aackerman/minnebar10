@@ -12,7 +12,7 @@ $ npm run this
 ### Running a specific examples
 
 ```bash
-$ git clone git@github.com:aackerman/minnebar10.git
+$ git clone https://github.com/aackerman/minnebar10.git
 $ cd babel-with-eslint
 $ npm install
 $ npm run this
